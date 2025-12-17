@@ -1,4 +1,0 @@
-this is echo created file in linux
-adding new line
-adding another new line
-Adding few line more in myfile txt file
