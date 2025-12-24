@@ -1,0 +1,275 @@
+The fundamentals of DevOps are culture, automation, continuous integration/delivery (CI/CD), monitoring, and collaboration. These principles aim to improve an organization's ability to deliver applications faster and more reliably by breaking down silos between development and operations teams and integrating practices like automation, version control, and infrastructure as code throughout the software lifecycle.
+
+Core principles
+
+Culture: Emphasizes collaboration, breaking down traditional silos between development and operations teams to foster a shared responsibility for the entire software lifecycle. 
+Automation: Automates repetitive and manual tasks in software development, testing, and deployment to reduce human error and accelerate processes. 
+Continuous Integration (CI): Developers merge code changes into a central repository frequently, after which an automated build and test process is triggered to validate the changes. 
+Continuous Delivery (CD): Automatically prepares code changes for release to production after they have passed the CI stage. This allows for frequent, reliable releases. 
+Monitoring and Logging: Involves collecting feedback and telemetry data from applications in real-time to identify issues, monitor performance, and inform future decisions. 
+Collaboration: Focuses on improving communication and integration between teams throughout the entire software lifecycle, from planning to maintenance.
+
+Supporting practices and tools
+
+Agile and Lean: Principles of agile and lean manufacturing are often used for incremental development in short sprints. 
+Version Control: Using systems like Git to track changes to code and allow a team to work together efficiently while maintaining a history of every version. 
+Infrastructure as Code (IaC): Managing and provisioning infrastructure through code, which can be versioned, automated, and reproduced consistently across different environments. 
+Rapid Feedback: Establishing fast feedback loops to quickly identify and address issues in the development or production environments.
+
+Culture and principles
+
+Collaboration: Fosters a culture where development and operations teams work together, sharing responsibility throughout the software lifecycle. 
+Automation: Minimizes manual effort and human error by automating repetitive tasks like building, testing, and deployment. 
+Continuous improvement: Emphasizes ongoing iteration and improvement based on rapid feedback.
+The DevOps Lifecycle is a continuous, collaborative process that integrates software development (Dev) and IT operations (Ops) to deliver high-quality software faster and more reliably. It consists of several stages that form a loop of continuous improvement.
+Below is a clear, structured breakdown:
+
+🔁 DevOps Lifecycle Stages
+1. Plan
+Define project requirements, goals, and tasks.
+Tools: Jira, Confluence, Azure Boards, Trello.
+
+
+2. Code
+Developers write application code.
+Follow standards like Git workflows, code reviews, branch strategies.
+Tools: Git, GitHub, GitLab, Bitbucket, VS Code.
+
+
+3. Build
+Source code is compiled, dependencies are installed, and artifacts are generated.
+Tools: Maven, Gradle, npm, Jenkins, GitHub Actions.
+
+
+4. Test
+Automated tests ensure code quality and functionality before deployment.
+Types of testing: unit, integration, functional, performance.
+Tools: Selenium, JUnit, TestNG, JMeter, Postman.
+5. Release
+Application is packaged and released with proper versioning.
+Release pipelines automate deployment steps.
+Tools: Jenkins, GitLab CI/CD, GitHub Actions, Azure DevOps.
+
+
+6. Deploy
+Deploy application to production or staging environments.
+Often automated using CI/CD.
+Tools: Kubernetes, Docker, Ansible, Terraform, AWS CodeDeploy.
+
+
+7. Operate
+The system is monitored for performance, availability, and security.
+Infrastructure and applications are managed in production.
+Tools: Kubernetes dashboards, AWS CloudWatch, Datadog, New Relic.
+
+
+8. Monitor
+Collect logs, metrics, events, and user feedback.
+Identify issues and feed insights back into planning.
+Tools: Prometheus, Grafana, ELK Stack, Splunk.
+
+
+
+🔄 Continuous Feedback Loop
+Each stage feeds into the next, forming an ongoing cycle:
+ Continuous Development → Continuous Integration → Continuous Testing → Continuous Deployment → Continuous Monitoring
+
+📘 Summary Diagram (Text Version)
+Plan → Code → Build → Test → Release → Deploy → Operate → Monitor
+           ↑_______________________________________________↓
+So what does the DevOps associate do in the Testing Stage?
+A DevOps engineer is usually responsible for:
+✔ Adding tests into CI/CD pipelines
+✔ Running automated tests through pipeline jobs
+✔ Ensuring environments (QA/stage) are ready for testing
+✔ Integrating tools (Selenium, Postman, JMeter, SonarQube)
+✔ Maintaining test execution infrastructure
+✔ Reporting test results and logs
+DevOps does NOT write manual test cases or perform manual testing.
+
+⭐ Simple Summary
+Type of Test
+Who Does It
+Unit Testing
+Developers
+Integration Testing
+Devs + QA
+Automated Tests in CI/CD
+QA Automation + SDETs
+Manual Testing
+QA Team
+Performance Testing
+QA Perf Team
+Security Testing
+Security / DevSecOps
+Pipeline Execution
+DevOps
+
+
+
+
+
+
+🧭 Full DevOps Toolchain at a Glance
+Plan → Code → Build → Test → Release → Deploy → Operate → Monitor
+ |       |       |       |        |         |        |         |
+Jira     Git   Jenkins Selenium Artifactory Docker   AWS    Grafana
+         GitHub Maven  Postman  Nexus       Ansible  Azure   ELK
+         GitLab Gradle JMeter   GitLab      Terraform GCP   Prometheus
+
+
+🌐 DevOps Lifecycle & Tools
+1️⃣ Planning & Collaboration
+Used to gather requirements, track tasks, and collaborate.
+Tools
+Jira – Agile boards, sprint planning
+Confluence – Documentation
+Azure Boards
+Trello
+Slack / MS Teams – Communication
+Miro / Notion – Whiteboarding, knowledge sharing
+
+
+
+2️⃣ Coding / Version Control
+Used for writing code and managing source control.
+Tools
+Git
+GitHub
+GitLab
+Bitbucket
+
+
+
+Code Review Tools
+GitHub Pull Requests
+GitLab Merge Requests
+Bitbucket PRs
+
+3️⃣ Build (Continuous Integration)
+Used to compile code, install dependencies, and create build artifacts.
+Build Tools
+Maven
+Gradle
+npm / yarn
+Ant
+MSBuild
+CI Tools
+Jenkins
+GitHub Actions
+GitLab CI/CD
+Azure DevOps Pipelines
+CircleCI
+Travis CI
+
+4️⃣ Testing (Continuous Testing)
+Used to automate tests and validate quality.
+Unit Testing
+JUnit, NUnit, PyTest, Mocha
+Automation / Functional Testing
+Selenium
+Cypress
+TestNG
+
+
+API Testing
+Postman / Newman
+REST Assured
+SoapUI
+
+
+Performance Testing
+JMeter
+Gatling
+
+
+Security Testing
+SonarQube (static code analysis)
+OWASP ZAP
+Snyk
+Checkmarx
+
+
+
+5️⃣ Release (Continuous Delivery)
+Used to package, version, store artifacts, and prepare for deployment.
+Artifact Repositories
+JFrog Artifactory
+Nexus Repository
+GitHub Packages
+Docker Hub
+AWS ECR
+Azure Container Registry (ACR)
+
+
+Release Management
+Jenkins Release Pipelines
+GitLab Releases
+Azure DevOps Release pipelines
+
+
+
+6️⃣ Deployment (Continuous Deployment)
+Tools to deploy applications to servers or the cloud.
+Configuration Management
+Ansible
+Chef
+Puppet
+SaltStack
+
+
+Containerization
+Docker
+Podman
+Orchestration
+Kubernetes
+OpenShift
+EKS / AKS / GKE
+
+
+IaC (Infrastructure as Code)
+Terraform
+CloudFormation (AWS)
+Pulumi
+
+
+
+7️⃣ Operations
+Tools used to manage production systems.
+Server Management
+Kubernetes Dashboard
+Rancher
+Docker Swarm
+
+
+Cloud Providers
+AWS
+Azure
+GCP
+
+
+
+8️⃣ Monitoring, Logging, Alerting
+Used to monitor system health, logs, metrics, performance.
+Monitoring
+Prometheus
+Grafana
+
+
+Datadog
+New Relic
+Nagios
+
+
+Logging
+ELK Stack (Elasticsearch, Logstash, Kibana)
+EFK Stack (Fluentd)
+Splunk
+Graylog
+
+
+Alerting
+Alertmanager
+PagerDuty
+OpsGenie
+
